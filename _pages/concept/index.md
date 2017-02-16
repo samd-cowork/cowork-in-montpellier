@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Concept
+title: Le concept
 permalink: /concept/
 ---

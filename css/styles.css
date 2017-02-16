@@ -38,16 +38,17 @@ header h1 {
     content: attr(data-title);
     position: absolute;
     left: 0;
-    bottom: -4rem;
+    bottom: -3rem;
     right: 0;
     margin: auto;
     display: block;
     font-size: 2rem;
-    visibility: hidden;
-    transition: all 0.2s; }
+    opacity: 0;
+    transition: all 0.3s; }
   header h1:hover:after {
     bottom: -5rem;
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1; }
 
 .site-header {
   border-top: 4px solid #36a8e0;

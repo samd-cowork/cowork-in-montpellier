@@ -9,19 +9,20 @@ header {
       content: attr(data-title);
       position: absolute;
       left: 0;
-      bottom: -4rem;
+      bottom: -3rem;
       right: 0;
       margin: auto;
 //      display: none;
       display: block;
       font-size: 2rem;
-      visibility: hidden;
-      transition: all 0.2s;
+      opacity: 0;
+      transition: all 0.3s;
     }
 
     &:hover:after{
       bottom: -5rem;
       visibility: visible;
+      opacity: 1;
     }
   }
 }

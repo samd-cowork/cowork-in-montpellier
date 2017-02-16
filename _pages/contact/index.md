@@ -4,6 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
+
 <form action="https://formspree.io/erick@entre-quote.com"
 method="POST">
   <label for="">Ton prénom, nom</label>

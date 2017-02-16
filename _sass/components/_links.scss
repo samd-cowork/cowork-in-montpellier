@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+a {
+
+  &,
+  &:visited {
+    color: $default-color;
+  }
+}

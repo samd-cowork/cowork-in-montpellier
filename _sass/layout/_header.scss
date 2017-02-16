@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+header {
+
+  h1 {
+    position: relative;
+
+    &:after {
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      bottom: -4rem;
+      right: 0;
+      margin: auto;
+//      display: none;
+      display: block;
+      font-size: 2rem;
+      visibility: hidden;
+      transition: all 0.2s;
+    }
+
+    &:hover:after{
+      bottom: -5rem;
+      visibility: visible;
+    }
+  }
+}
+
+.site-header {
+  border-top: 4px solid $default-color;
+  border-bottom: none;
+}
+
+.site-nav {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  a {
+    min-width: 130px;
+      text-align: center;
+    
+    &:nth-child(3) {
+      flex-grow: 1;
+    }
+  }
+}

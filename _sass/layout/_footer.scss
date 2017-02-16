@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.site-footer {
+  border-top: none;
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    
+    a {
+      margin: 0 2em;
+    }
+  }
+}

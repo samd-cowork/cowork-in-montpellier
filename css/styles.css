@@ -1,0 +1,125 @@
+/*
+Comment everything not useful for the current project
+*/
+/* --- Base --- */
+/* --- * --- */
+* {
+  box-sizing: border-box; }
+
+/* --- Body --- */
+body {
+  margin: 0;
+  background-color: #fff; }
+
+/*Font-face declaration example*/
+html {
+  font-size: 62.5%;
+  /* 10px */
+  font-size: calc(1em * 0.625);
+  /* fix */ }
+
+body {
+  font-family: "", Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.25; }
+
+/* --- Layout --- */
+.container {
+  margin: 0 auto;
+  width: "980px"; }
+
+@media (max-width: 980px) {
+  .container {
+    padding: 0 20px;
+    width: 100%; } }
+header h1 {
+  position: relative; }
+  header h1:after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    right: 0;
+    margin: auto;
+    display: block;
+    font-size: 2rem;
+    visibility: hidden;
+    transition: all 0.2s; }
+  header h1:hover:after {
+    bottom: -5rem;
+    visibility: visible; }
+
+.site-header {
+  border-top: 4px solid #36a8e0;
+  border-bottom: none; }
+
+.site-nav {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site-nav a {
+    min-width: 130px;
+    text-align: center; }
+    .site-nav a:nth-child(3) {
+      flex-grow: 1; }
+
+.site-footer {
+  border-top: none; }
+  .site-footer h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .site-footer nav {
+    display: flex;
+    justify-content: center; }
+    .site-footer nav a {
+      margin: 0 2em; }
+
+/* --- Components --- */
+/* --- Nav --- */
+nav a {
+  text-decoration: none; }
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font-size: 1em;
+  vertical-align: middle; }
+
+/* Labels */
+label {
+  display: block; }
+
+/* Inputs */
+input[type="text"],
+textarea,
+select {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #36a8e0; }
+
+[type="radio"] + label,
+[type="checkbox"] + label {
+  display: inline-block; }
+
+/* Textarea */
+textarea {
+  resize: vertical; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+
+button {
+  cursor: pointer; }
+
+a, a:visited {
+  color: #36a8e0; }
+
+/* --- Pages --- */
+/* --- Vendors --- */
+/*@import "vendors/"*/
+
+/*# sourceMappingURL=styles.css.map */

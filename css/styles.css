@@ -54,17 +54,6 @@ header h1 {
   border-top: 4px solid #36a8e0;
   border-bottom: none; }
 
-.site-nav {
-  float: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .site-nav a {
-    min-width: 130px;
-    text-align: center; }
-    .site-nav a:nth-child(3) {
-      flex-grow: 1; }
-
 .site-footer {
   border-top: none; }
   .site-footer h2 {
@@ -74,12 +63,44 @@ header h1 {
     display: flex;
     justify-content: center; }
     .site-footer nav a {
-      margin: 0 2em; }
+      margin: 0 2rem; }
+    @media screen and (max-width: 600px) {
+      .site-footer nav {
+        justify-content: space-around; }
+        .site-footer nav a {
+          margin: 0; } }
 
 /* --- Components --- */
 /* --- Nav --- */
 nav a {
   text-decoration: none; }
+
+.site-nav {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site-nav a {
+    font-size: 2.4rem;
+    text-align: center; }
+  .site-nav .logo {
+    flex-basis: 25rem; }
+    .site-nav .logo img {
+      max-width: 25rem; }
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      align-items: stretch;
+      flex-wrap: wrap;
+      position: relative;
+      top: 0;
+      right: auto;
+      background: none;
+      border: none; }
+      .site-nav a {
+        order: 2; }
+      .site-nav .logo {
+        order: 1;
+        flex-basis: 100%; } }
 
 /* Forms */
 input,
@@ -95,8 +116,10 @@ label {
 
 /* Inputs */
 input[type="text"],
+input[type="email"],
 textarea,
 select {
+  margin-bottom: 2rem;
   padding: 10px;
   width: 100%;
   border: 1px solid #36a8e0; }
@@ -111,7 +134,17 @@ textarea {
 
 input[type="submit"],
 button {
-  cursor: pointer; }
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #36a8e0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.3s; }
+  input[type="submit"]:hover,
+  button:hover {
+    color: #36a8e0;
+    background-color: #fff;
+    border-color: #36a8e0; }
 
 button {
   cursor: pointer; }
@@ -120,6 +153,13 @@ a, a:visited {
   color: #36a8e0; }
 
 /* --- Pages --- */
+.contact-wrapper {
+  display: flex; }
+  .contact-wrapper > div {
+    flex-basis: 49%; }
+    .contact-wrapper > div:not(:first-child) {
+      margin-left: 2%; }
+
 /* --- Vendors --- */
 /*@import "vendors/"*/
 

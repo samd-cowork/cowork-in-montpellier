@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.contact-wrapper {
+  display: flex;
+  
+  & > div {
+    flex-basis: 49%;
+    
+    &:not(:first-child) {
+      margin-left: 2%;
+    }
+  }
+}

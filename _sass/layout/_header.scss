@@ -31,19 +31,3 @@ header {
   border-top: 4px solid $default-color;
   border-bottom: none;
 }
-
-.site-nav {
-  float: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  a {
-    min-width: 130px;
-      text-align: center;
-    
-    &:nth-child(3) {
-      flex-grow: 1;
-    }
-  }
-}

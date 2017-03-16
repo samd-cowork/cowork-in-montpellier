@@ -13,7 +13,17 @@
     justify-content: center;
     
     a {
-      margin: 0 2em;
+      margin: 0 2rem;
     }
+
+    @media screen and (max-width: 600px) {
+    justify-content: space-around;
+      
+      a {
+        margin: 0;
+      }
+    }
+    
   }
+  
 }

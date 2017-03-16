@@ -2,8 +2,50 @@
 
 /* --- Nav --- */
 nav {
-  
+
 }
 nav a {
   text-decoration: none;
 }
+
+
+.site-nav {
+  float: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .logo {
+    flex-basis: 25rem;
+
+    img {
+      max-width: 25rem;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    right: auto;
+    background: none;
+    border: none;
+
+    a {
+      order: 2;
+    }
+    
+    .logo {
+      order: 1;
+      flex-basis: 100%;
+    }
+  }
+}
+

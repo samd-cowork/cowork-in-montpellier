@@ -161,6 +161,9 @@ a, a:visited {
   color: #36a8e0; }
 
 /* --- Pages --- */
+.intro {
+  margin-bottom: 6rem; }
+
 .prices-wrapper {
   display: flex;
   flex-wrap: wrap;

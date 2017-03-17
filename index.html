@@ -4,16 +4,20 @@ layout: default
 
 <div class="home">
 
- 
+  <section class="intro">
+    {% for post in site.posts %}
+      {{ post.content }}
+    {% endfor %}
+  </section>
 
   <section class="prices">
 
     <h2>Tarifs</h2>
 
     <div class="prices-wrapper">
-     
+
       {% for price in site.data.prices %}
-      
+
       <div>
 
         <h3 class="price-name">{{ price.name }}</h3>
@@ -27,11 +31,11 @@ layout: default
         </ul>
 
       </div>
-      
+
       {% endfor %}
-      
+
     </div>
-    
+
   </section>
 
   <p class="free-day">La première journée est gratuite pour que tu puisses tester, n'hésite pas à venir sans réserver</p>

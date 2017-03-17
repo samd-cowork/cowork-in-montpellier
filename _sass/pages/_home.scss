@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-
-.intro {
-  margin-bottom: 6rem;
-  
-}
-
 .prices-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -87,4 +81,10 @@
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
+}
+
+
+.home-editable-content {
+  margin: 6rem 0;
+  
 }

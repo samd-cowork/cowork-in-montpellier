@@ -1,0 +1,7 @@
+- name: Gare
+  distance: 10km
+  time: 5min
+  
+- name: Tram
+  distance: 100m
+  time: 2min

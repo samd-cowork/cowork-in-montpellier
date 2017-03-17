@@ -87,8 +87,9 @@ nav a {
   margin: 3rem 0; }
   .site-nav > a {
     font-size: 2.4rem;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
+    .site-nav > a, .site-nav > a:visited {
+      color: #fff; }
   .site-nav .logo {
     flex-basis: 25rem; }
     .site-nav .logo img {

@@ -3,13 +3,13 @@
   <div class="wrapper">
 
     <nav class="site-nav">
-      <a href="/espace">Le lieu</a>
+      <a href="{{ '/espace' | relative_url}}">Le lieu</a>
 
       <a href="{{ '/' | relative_url}}" class="logo">
-        <h1 data-title="Retour à l'accueil"><img src="{{ "/img/logo.svg" | relative_url }}" alt="Cowork'in Montpellier"></h1>
+        <h1 data-title="Retour à l'accueil"><img src="{{ "/img/logo-white.svg" | relative_url }}" alt="Cowork'in Montpellier"></h1>
       </a>
       
-      <a href="/contact">Contact</a>
+      <a href="{{ '/contact' | relative_url}}">Contact</a>
     </nav>
 
   </div>

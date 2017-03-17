@@ -2,12 +2,30 @@
 
 .contact-wrapper {
   display: flex;
-  
+
   & > div {
     flex-basis: 49%;
-    
+
     &:not(:first-child) {
       margin-left: 2%;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+
+    & > div {
+      flex-basis: auto;
+      
+      &:not(:first-child) {
+        min-height: 20rem;
+        margin-top: 3rem;
+        margin-left: 0;
+        
+        iframe {
+          height: 30rem;
+        }
+      }
     }
   }
 }

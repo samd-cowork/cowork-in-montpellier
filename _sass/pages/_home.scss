@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.prices-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  border: 1px solid #000;
+
+  div {
+    flex-basis: 20%;
+    text-align: center;
+
+    &:not(:first-of-type) {
+      border-left: 1px solid #000;
+    }
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+  }
+
+  @media screen and (max-width: 960px) {
+
+    div {
+      flex-basis: 33.3333%;
+
+      &:first-of-type,
+      &:nth-of-type(2) {
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    div {
+
+      &,
+      &:first-of-type,
+      &:nth-of-type(2) {
+        flex-basis: 100%;
+      }
+
+      &:not(:first-of-type) {
+        border-top: 1px solid #000; 
+        border-left: 0;
+      }
+    }
+    
+    .price-desc {
+      min-height: 0;
+    }
+  }
+}
+
+.price-name {
+  padding: 2rem 0;
+  color: #fff;
+  background-color: $default-color;
+}
+
+.price-desc,
+.price-value {
+  font-weight: bold;
+}
+
+.price-desc {
+  min-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.price-value {
+  font-size: 2.4rem;
+  color: $default-color;
+  margin: 2rem 0;
+}
+
+.free-day {
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+}

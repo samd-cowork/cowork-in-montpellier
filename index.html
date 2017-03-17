@@ -4,12 +4,36 @@ layout: default
 
 <div class="home">
 
-  <h1>Wesh</h1>
-  
-  texte intro
-  
-  <h2>Tarifs</h2>
-  
-  
-  
+ 
+
+  <section class="prices">
+
+    <h2>Tarifs</h2>
+
+    <div class="prices-wrapper">
+     
+      {% for price in site.data.prices %}
+      
+      <div>
+
+        <h3 class="price-name">{{ price.name }}</h3>
+
+        <ul>
+          <li class="price-desc">{{ price.desc }}</li>
+          <li>Café / Thé</li>
+          <li>Wifi</li>
+          <li>Imprimante</li>
+          <li class="price-value">{{ price.value }}</li>
+        </ul>
+
+      </div>
+      
+      {% endfor %}
+      
+    </div>
+    
+  </section>
+
+  <p class="free-day">La première journée est gratuite pour que tu puisses tester, n'hésite pas à venir sans réserver</p>
+
 </div>

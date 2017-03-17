@@ -1,0 +1,20 @@
+- name: Journée
+  desc: Accès une journée
+  value: 12 € / jour  
+  
+- name: 10 jours
+  desc: 10 accès journée <br> (valable 1 an)
+  value: 110 €  
+  
+- name: Mid time
+  desc: Accès 10 jours / mois
+  value: 100 € / mois
+  
+- name: Part time
+  desc: Accès 3 jours / semaine
+  value: 120 € / mois
+
+- name: Full time
+  desc: Accès illimité
+  value: 180 € /mois
+ 

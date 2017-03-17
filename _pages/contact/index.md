@@ -14,7 +14,7 @@ permalink: /contact/
   <form action="https://formspree.io/erick@entre-quote.com"
   method="POST">
   <label for="">Ton prénom, nom, pseudo</label>
-  <input type="text" name="name" placeholder="Jea-Michel Coworker">
+  <input type="text" name="name" placeholder="Jean-Michel Coworker">
   <label for="">Ton email</label>
   <input type="email" name="_replyto" placeholder="jean-michel@futurcoworker.fr">
   <label for="">Ton message</label>

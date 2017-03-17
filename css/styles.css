@@ -32,23 +32,27 @@ body {
   .container {
     padding: 0 20px;
     width: 100%; } }
-header h1 {
-  position: relative; }
-  header h1:after {
-    content: attr(data-title);
-    position: absolute;
-    left: 0;
-    bottom: -3rem;
-    right: 0;
-    margin: auto;
-    display: block;
-    font-size: 2rem;
-    opacity: 0;
-    transition: all 0.3s; }
-  header h1:hover:after {
-    bottom: -5rem;
-    visibility: visible;
-    opacity: 1; }
+.site-header {
+  margin-bottom: 3rem;
+  background-color: #36a8e0;
+  color: #fff; }
+  .site-header h1 {
+    position: relative; }
+    .site-header h1:after {
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      bottom: -3rem;
+      right: 0;
+      margin: auto;
+      display: block;
+      font-size: 2rem;
+      opacity: 0;
+      transition: all 0.3s; }
+    .site-header h1:hover:after {
+      bottom: -5rem;
+      visibility: visible;
+      opacity: 1; }
 
 .site-header {
   border-top: 4px solid #36a8e0;
@@ -76,13 +80,15 @@ nav a {
   text-decoration: none; }
 
 .site-nav {
-  float: none;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .site-nav a {
+  align-items: center;
+  float: none;
+  margin: 3rem 0; }
+  .site-nav > a {
     font-size: 2.4rem;
-    text-align: center; }
+    text-align: center;
+    color: #fff; }
   .site-nav .logo {
     flex-basis: 25rem; }
     .site-nav .logo img {
@@ -122,6 +128,7 @@ select {
   margin-bottom: 2rem;
   padding: 10px;
   width: 100%;
+  font-size: 1.6rem;
   border: 1px solid #36a8e0; }
 
 [type="radio"] + label,
@@ -153,12 +160,74 @@ a, a:visited {
   color: #36a8e0; }
 
 /* --- Pages --- */
+.prices-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  border: 1px solid #000; }
+  .prices-wrapper div {
+    flex-basis: 20%;
+    text-align: center; }
+    .prices-wrapper div:not(:first-of-type) {
+      border-left: 1px solid #000; }
+  .prices-wrapper ul {
+    margin: 0;
+    list-style-type: none; }
+  @media screen and (max-width: 960px) {
+    .prices-wrapper div {
+      flex-basis: 33.3333%; }
+      .prices-wrapper div:first-of-type, .prices-wrapper div:nth-of-type(2) {
+        flex-basis: 50%; } }
+  @media screen and (max-width: 600px) {
+    .prices-wrapper div, .prices-wrapper div:first-of-type, .prices-wrapper div:nth-of-type(2) {
+      flex-basis: 100%; }
+    .prices-wrapper div:not(:first-of-type) {
+      border-top: 1px solid #000;
+      border-left: 0; }
+    .prices-wrapper .price-desc {
+      min-height: 0; } }
+
+.price-name {
+  padding: 2rem 0;
+  color: #fff;
+  background-color: #36a8e0; }
+
+.price-desc,
+.price-value {
+  font-weight: bold; }
+
+.price-desc {
+  min-height: 5rem;
+  margin-bottom: 2rem; }
+
+.price-value {
+  font-size: 2.4rem;
+  color: #36a8e0;
+  margin: 2rem 0; }
+
+.free-day {
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center; }
+
 .contact-wrapper {
   display: flex; }
   .contact-wrapper > div {
     flex-basis: 49%; }
     .contact-wrapper > div:not(:first-child) {
       margin-left: 2%; }
+  @media screen and (max-width: 960px) {
+    .contact-wrapper {
+      flex-direction: column; }
+      .contact-wrapper > div {
+        flex-basis: auto; }
+        .contact-wrapper > div:not(:first-child) {
+          min-height: 20rem;
+          margin-top: 3rem;
+          margin-left: 0; }
+          .contact-wrapper > div:not(:first-child) iframe {
+            height: 30rem; } }
 
 /* --- Vendors --- */
 /*@import "vendors/"*/

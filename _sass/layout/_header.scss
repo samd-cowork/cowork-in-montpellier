@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-header {
+.site-header {
+  margin-bottom: 3rem;
+  background-color: $default-color;
+  color: #fff;
 
   h1 {
     position: relative;

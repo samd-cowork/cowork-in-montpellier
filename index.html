@@ -4,11 +4,7 @@ layout: default
 
 <div class="home">
 
-  <section class="intro">
-    {% for post in site.posts %}
-      {{ post.content }}
-    {% endfor %}
-  </section>
+
 
   <section class="prices">
 
@@ -36,8 +32,14 @@ layout: default
 
     </div>
 
+    <p class="free-day">La première journée est gratuite pour que tu puisses tester, n'hésite pas à venir sans réserver</p>
+
   </section>
 
-  <p class="free-day">La première journée est gratuite pour que tu puisses tester, n'hésite pas à venir sans réserver</p>
-
+  <section class="intro">
+    {% for post in site.posts %}
+    {{ post.content }}
+    {% endfor %}
+  </section>
+  
 </div>
